@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="assets/Logo.png" alt="Logo Alura">
+    </header>
+
+    <main>
+        <form class="formulario_contenedor">
+            <textarea class="formulario_input" name="Mensaje" id="" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="contenedor_boton">
+                    <div class="alerta_mensaje"><img src="assets/bi_exclamation-circle-fill.png" alt="Icono de alerta"><span>Solo letras minúsculas y sin acentos</span></div>
+                </div>
+                <div class="contenedor">
+                <input class="formulario_encriptar" type="submit" value="Encriptar">
+                <input class="formulario_encriptar formulario_desencriptar" type="submit" value="Desencriptar">
+            </div>
+        </form>
+        <aside class="resultado">
+            <img src="assets/Muñeco.png" alt="Figura mirando con asombro" class="muñeco">
+            <div class="loader ocultar"></div>
+            <div class="contenedor_resultado">
+                <h3 class="resultado_titulo">Ningún mensaje fue encontrado</h3>
+                <p class="resultado_texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button class="resultado_boton formulario_encriptar formulario_desencriptar ocultar">Copiar</button>
+            </div>
+        </aside>    
+    </main>
+
+    <footer class="footer">
+        <p>Desarrollado por Jhosuá Cáceres</p>
+    </footer>
+    <script src="js/app.js" ></script>
+</body>
+</html>
